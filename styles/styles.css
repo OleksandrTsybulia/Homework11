@@ -4,6 +4,8 @@
   --background-color-main: #f9f6f5;
   --white-color: #ffffff;
   --black-color: #000000;
+  --secondary-color: #999999;
+  --secondary-text-color: #555555;
 }
 
 h1,
@@ -91,9 +93,9 @@ nav a {
 /* HERO */
 
 .hero {
-  padding-top: 138px;
+  padding-top: 140px;
   background-color: var(--background-color-main);
-  height: 747px;
+  padding-bottom: 40px;
 }
 .hero .container {
   background-image: url('../images/cosmetic.png');
@@ -102,51 +104,50 @@ nav a {
   background-size: contain;
 }
 ::placeholder {
-  color: #999999;
-  padding: 14px 256px 14px 16px;
+  color: var(--secondary-color);
 }
-.cosmetic-description {
-  position: relative;
-}
-.cosmetic-description h1 {
+.hero h1 {
   font-weight: 500;
   font-size: 56px;
   width: 621px;
   color: var(--black-color);
   margin-bottom: 30px;
 }
-.cosmetic-description p {
+.hero p {
   font-size: 20px;
   width: 516px;
   line-height: 1.6;
-  color: #555555;
+  color: var(--secondary-text-color);
   margin-bottom: 30px;
+}
+form {
+  margin-bottom: 60px;
+  position: relative;
 }
 .search-area {
   width: 326px;
   height: 48px;
   background-color: var(--white-color);
   border: 1px var(--background-color-main) solid;
-  position: relative;
+  padding: 14px 0 14px 16px;
 }
-.cosmetic-description button {
+.hero-button {
   width: 32px;
   height: 32px;
   border: none;
   position: absolute;
   left: 285px;
   background-color: var(--backgound-buttons-color);
-  top: 293px;
+  top: 8px;
   padding: 8px;
 }
-.cosmetic-description svg {
+.hero-button svg {
   width: 16px;
   height: 16px;
   background-color: var(--backgound-buttons-color);
   fill: var(--white-color);
 }
-.cosmetic-description a {
-  width: 148px;
+.hero a {
   background-color: var(--backgound-buttons-color);
   color: var(--white-color);
   font-size: 18px;
@@ -156,19 +157,18 @@ nav a {
 .navigation-buttons {
   display: flex;
   align-items: center;
-  padding-left: 540px;
+  justify-content: center;
 }
 .navigation-buttons button {
   background-color: var(--background-color-main);
   border: none;
-  width: 73px;
+  width: 80px;
   height: 138px;
+  align-items: center;
+  text-align: center;
 }
 .navigation-buttons svg {
   width: 40px;
   height: 40px;
   fill: var(--medium-color);
-}
-form {
-  margin-bottom: 60px;
 }
